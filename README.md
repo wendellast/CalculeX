@@ -4,27 +4,27 @@ CalculeX is a comprehensive website designed for students and enthusiasts of exa
 
 - Leguage: Português-BR / English
 
-# Progress
+## Progress
 
 Development >> active
 
-# Compatibily
+## Compatibily
 
 responsive on all browsers and devices
 
-# Design intent
+## Design intent
 
 Develop a website with various tools to help with calculations and solutions for exact subjects
 
-# project language
+## project language
 
 The project will be in Portuguese-BR, however the codes will be written in English for dictatorial reasons.
 
 ps: If you don't know English, no problem, we accept your contribution in Portuguese
 
-# Cooperation
+## Cooperation
 
-## Rules to help
+### Rules to help
 
 Feel free to help with whatever you want
 
