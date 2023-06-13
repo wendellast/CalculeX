@@ -1,6 +1,7 @@
+#Prettier format html
+
 # Config Project
 root = true
-
 
 # ALL
 [*]
