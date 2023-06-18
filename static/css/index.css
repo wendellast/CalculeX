@@ -78,75 +78,123 @@ nav{
 
 
 /* Main */
-.main-container{
+.main-container {
 	max-width: 52rem;
-	height: fit-content;
+	min-height: calc(100vh - 29rem); /* Defina a altura mínima para garantir que o conteúdo não ultrapasse o rodapé */
+	overflow-y: auto; /* Adicione uma barra de rolagem vertical caso o conteúdo seja muito longo */
+	margin-bottom: 4.4rem;
+}
+  
+.container {
+	transition: transform 0.5s ease; 
 	
 }
-
-ul{
+  
+.main-container ul {
 	display: grid;
 	gap: 1rem;
 	list-style: none;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto auto;
 }
-
-ul:has(li:hover) li:not(:hover){
+  
+.main-container ul:has(li:hover) li:not(:hover) {
 	opacity: 0.6;
-	scale: .98;
+	scale: 0.98;
 }
-
-li{
+  
+.main-container li {
 	background-color: var(--color-primary);
-	flex: 1;
-	width: fit-content;
-	padding: 2rem;
+	
+	width: 100%;
+	padding: 1rem;
 	border-radius: 0.8rem;
 	transition: all 300ms ease-in-out;
 }
 
-
-li .header-container{
+.main-container li .header-container {
 	display: flex;
 	align-items: center;
-	gap: .8rem;
+	gap: 0.8rem;
 	color: whitesmoke;
 	font-style: bold;
+	font-size: 1.2rem;
 }
-
-li span{
+  
+.main-container li span {
 	opacity: 0.9;
-	
 }
-
-li a:hover{
+  
+.main-container li a:hover {
 	transform: scale(1.1);
 }
-
-li p{
-	color: rgba( 0, 0, 0.774);
+  
+.main-container li p {
+	color: rgba(0, 0, 0.774);
 	margin-top: 1rem;
 	opacity: 0.8;
+	font-size: 1rem;
 }
 
-li a{
+.main-container li a {
 	display: inline-block;
-	color: white;
+	color: whitesmoke;
 	margin-top: 1rem;
 	text-decoration: none;
-	transition: color 2.s;
-	opacity: .8;
+	transition: all 300ms ease-in-out;
+	opacity: 0.8;
 }
+  
+.main-container li a:hover {
+	color: var(--color-meta-light);
+	/* filter: brightness(1.3); */
 
-li a:hover{
-	color: var(--color-meta);
-	filter: brightness(.8);
 }
-
-@media (max-width:36rem){
-	ul{
-		grid-template-columns: 1fr;
+  
+@media (max-width: 36rem) {
+	.main-container ul {
+	  grid-template-columns: 1fr;
 	}
-
 }
 /* Main */
+
+/* Footer */
+footer{
+	font-size: 1.3rem;
+
+	margin-top: auto; /* Adicione essa propriedade para empurrar o rodapé para o final da página */
+	padding-top: 1rem; /* Ajuste o valor conforme necessário */
+	padding-bottom: 1rem; /* Ajuste o valor conforme necessário */
+	background-color: var(--color-primary);
+	color: var(--color-meta);
+		
+}
+
+.content-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	flex-direction: row;
+	padding: 1rem;
+}
+
+.content-footer a {
+	color: var(--color-white);
+	transition: all 300ms ease-in-out;
+	text-decoration: none;
+	font-size: 1.2rem;
+
+}
+
+
+.content-footer a:hover {
+	color: var(--color-meta);
+	filter: brightness(1.3);
+}
+
+.logo-github{
+	margin-right: .2rem;
+}
+
+/* Footer */
+
