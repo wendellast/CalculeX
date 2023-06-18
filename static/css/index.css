@@ -80,9 +80,9 @@ nav{
 /* Main */
 .main-container {
 	max-width: 52rem;
-	min-height: calc(100vh - 29rem); /* Defina a altura mínima para garantir que o conteúdo não ultrapasse o rodapé */
-	overflow-y: auto; /* Adicione uma barra de rolagem vertical caso o conteúdo seja muito longo */
-	margin-bottom: 4.4rem;
+	min-height: calc(100vh - 29rem); 
+	overflow-y: auto; 
+	
 }
   
 .container {
@@ -146,7 +146,7 @@ nav{
   
 .main-container li a:hover {
 	color: var(--color-meta-light);
-	/* filter: brightness(1.3); */
+	
 
 }
   
@@ -159,23 +159,21 @@ nav{
 
 /* Footer */
 footer{
+	position: fixed; 
+	left: 0;
+	right: 0;
+	bottom: 0;
 	font-size: 1.3rem;
-
-	margin-top: auto; /* Adicione essa propriedade para empurrar o rodapé para o final da página */
-	padding-top: 1rem; /* Ajuste o valor conforme necessário */
-	padding-bottom: 1rem; /* Ajuste o valor conforme necessário */
 	background-color: var(--color-primary);
 	color: var(--color-meta);
-		
 }
 
 .content-footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	flex-direction: row;
 	padding: 1rem;
+
 }
 
 .content-footer a {
@@ -198,3 +196,17 @@ footer{
 
 /* Footer */
 
+
+/* Alert Message  */
+.no-results-message{
+	display: flex;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--color-primary);
+	/* background-color: deeppink	; */
+	transition: all 300ms ease-in-out;
+}
+
+.no-results-message:hover{
+	color: var(--color-primary-two);
+}
