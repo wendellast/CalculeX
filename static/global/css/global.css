@@ -6,8 +6,11 @@
 	--color-back: #DCE9F5;
 	--color-meta: #BDDEDE;
 	--color-meta-light: #D3F9E4;
+	--color-meta-light-back: #abccbac2;
 
 	--font-primary:  'Oswald', sans-serif;
+	--font-second:  'Sarala', sans-serif;
+	--font-lato: 'Lato', sans-serif;
 }
 
 *{
@@ -17,24 +20,13 @@
 }
 
 html{
-	height: 60%;
+	height: 62%;
 }
 
 body{
-	background-color: aliceblue;
-	font-family: var(--font-primary);
+	background-color: #bddede6e;
 	font-size: 1.2rem;
 }	
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-	padding: 1px;
-}
 
 
 a{

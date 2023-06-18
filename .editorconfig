@@ -16,6 +16,12 @@ insert_final_newline = true
 [Makefile]
 indent_style = tab
 
+
+[*.py]
+indent_size = 4
+indent_style = tab
+
+
 # JS
 [lib/**.js]
 indent_style = space
