@@ -157,15 +157,17 @@ nav{
 	.main-container ul {
 	  grid-template-columns: 1fr;
 	}
+
 }
 /* Main */
 
 /* Footer */
 footer{
-	/* position: fixed;  */
+	display: block;
+	overflow-y: auto;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 0; 
 	font-size: 1.3rem;
 	background-color: var(--color-primary);
 	color: var(--color-meta);
@@ -173,6 +175,7 @@ footer{
 
 .content-footer{
 	display: flex;
+	/* position: absolute; */
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
