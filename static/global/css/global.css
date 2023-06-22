@@ -12,19 +12,20 @@
 	--font-second:  'Sarala', sans-serif;
 	--font-lato: 'Lato', sans-serif;
 }
-
 *{
 	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
+	margin: 0;
 }
 
-
 body{
+	display: flex;
+	flex-direction: column;
 	background-color: #bddede6e;
 	font-size: 1.2rem;
-	height: 30rem;
+	height:  calc(100vh);;
 }	
+/* height: 42.6rem; */
 
 
 a{

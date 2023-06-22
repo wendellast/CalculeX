@@ -84,7 +84,7 @@ nav{
 	max-width: 52rem;
 	min-height: calc(100vh - 29rem); 
 	overflow-y: auto; 
-	margin-bottom: 4.5rem;
+	
 	
 }
   
@@ -168,6 +168,7 @@ footer{
 	left: 0;
 	right: 0;
 	bottom: 0; 
+	margin-top: auto;
 	font-size: 1.3rem;
 	background-color: var(--color-primary);
 	color: var(--color-meta);
@@ -205,6 +206,7 @@ footer{
 
 /* Alert Message  */
 .no-results-message{
+	
 	display: flex;
 	font-size: 2rem;
 	text-align: center;
