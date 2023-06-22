@@ -1,7 +1,6 @@
 const elementFilter = document.querySelector('header input');
 const cards = document.querySelectorAll('.cards li');
 const resultMessage = document.querySelector('.no-results-message');
-const contenMain = document.querySelector('.main-container');
 elementFilter.addEventListener('input', filtterElement);
 
 

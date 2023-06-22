@@ -18,6 +18,8 @@ nav{
 .content-header a{
 	color: var(--color-primary-light);
 }
+/* Header */
+
 
 /* Search */
 
@@ -161,6 +163,7 @@ nav{
 }
 /* Main */
 
+
 /* Footer */
 footer{
 	display: block;
@@ -176,7 +179,6 @@ footer{
 
 .content-footer{
 	display: flex;
-	/* position: absolute; */
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
@@ -190,7 +192,6 @@ footer{
 	font-size: 1.2rem;
 
 }
-
 
 .content-footer a:hover {
 	color: var(--color-meta);
@@ -209,6 +210,7 @@ footer{
 	
 	display: flex;
 	font-size: 2rem;
+	margin-top: calc(20vh);
 	text-align: center;
 	color: var(--color-primary);
 	/* background-color: deeppink	; */
@@ -217,4 +219,5 @@ footer{
 
 .no-results-message:hover{
 	color: var(--color-primary-two);
+	scale: 1.5;
 }
