@@ -1,8 +1,18 @@
 /* Header */
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #bddede6e;
+	font-size: 1.2rem;
+	height:  calc(100vh);;
+}	
+
+
 
 header{
 	font-size: 1.3rem;
 }
+
 
 nav{
 	display: flex;
@@ -24,7 +34,6 @@ nav{
 /* Search */
 
 .search-form{
-	/* position: fixed; */
 	position: relative;
 	border: 0.2rem solid var(--color-primary);
 	max-width: 32rem;
@@ -84,8 +93,8 @@ nav{
 /* Main */
 .main-container {
 	max-width: 52rem;
-	min-height: calc(100vh - 29rem); 
-	overflow-y: auto; 
+	/* min-height: calc(100vh - 29rem);  */
+	overflow: visible; 
 	
 	
 }
@@ -100,6 +109,7 @@ nav{
 	gap: 1rem;
 	list-style: none;
 	grid-template-columns: auto auto;
+	margin-bottom: 1rem;
 }
   
 .main-container ul:has(li:hover) li:not(:hover) {
@@ -168,7 +178,6 @@ nav{
 footer{
 	/* display: block; */
 	position: relative;
-	overflow-y: auto;
 	left: 0;
 	right: 0;
 	bottom: 0; 
@@ -216,6 +225,7 @@ footer{
 	color: var(--color-primary);
 	/* background-color: deeppink	; */
 	transition: all 300ms ease-in-out;
+	overflow: hidden;
 }
 
 .no-results-message:hover{

@@ -20,14 +20,6 @@
 	margin: 0;
 }
 
-body{
-	display: flex;
-	flex-direction: column;
-	background-color: #bddede6e;
-	font-size: 1.2rem;
-	height:  calc(100vh);;
-}	
-
 
 a{
 	text-decoration: none;

@@ -1,0 +1,21 @@
+header{
+	font-size: 1.5rem;
+	background-color:  #9EA18C;
+	color: #E2DEC5;
+	font-weight: bold;
+}
+
+header a:visited{
+	color: #E2DEC5;
+}
+
+ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.title-content{
+	margin: 0 auto;
+	align-items: baseline;
+}
