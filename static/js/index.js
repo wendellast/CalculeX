@@ -1,8 +1,8 @@
 const elementFilter = document.querySelector('header input');
 const cards = document.querySelectorAll('.cards li');
 const resultMessage = document.querySelector('.no-results-message');
-elementFilter.addEventListener('input', filtterElement);
 
+elementFilter.addEventListener('input', filtterElement);
 
 console.log(elementFilter);
 function filtterElement(){

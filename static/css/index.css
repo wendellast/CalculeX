@@ -166,7 +166,8 @@ nav{
 
 /* Footer */
 footer{
-	display: block;
+	/* display: block; */
+	position: relative;
 	overflow-y: auto;
 	left: 0;
 	right: 0;
