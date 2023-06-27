@@ -1,22 +1,96 @@
 <!DOCTYPE html>
-<html lang=pt-BR">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Style -->
-	<link rel="stylesheet" href="/static/global/css/global.css">
-	<link rel="stylesheet" href="/static/css/conversorDeMedidas.css">
-	<title>Conversor De Médida</title>
-</head>
-<body>
-	<!-- Header -->
-	<header class="content">
-		<nav>
-			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li class="title-content"><a href="/pages/conversorDeMedidas.html">Conversor De Médida</a></li>
-			</ul>
-		</nav>
-	</header>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/static/global/css/global.css" />
+		<link rel="stylesheet" href="/static/css/conversorDeMedidas.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="content">
+			<nav>
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li class="title-content">
+						<a href="/pages/conversorDeMedidas.html"
+							>Conversor De Médida</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<section class="select-all">
+				<select
+					class="select-one"
+					name="select-one"
+					id="select-one"
+					onchange="remoteAll()"
+				>
+					<option value="" selected disabled>Médida Inicial</option>
+					<option value="km">Quilômetro (km)</option>
+					<option value="hm">Hectômetro (hm)</option>
+					<option value="dam">Decâmetro (dam)</option>
+					<option value="m">Metros (m)</option>
+					<option value="dm">Decímetro (dm)</option>
+					<option value="cm">Centímetro (cm)</option>
+					<option value="mm">Milímetro (mm)</option>
+				</select>
+			</section>
+
+			<span class="text-for">Para</span>
+
+			<section class="select-all">
+				<select
+					class="select-two"
+					name="select-two"
+					id="select-two"
+					onchange="removeTitulo2()"
+				>
+					<option value="" selected disabled>Médida Final</option>
+					<option value="km">Quilômetro (km)</option>
+					<option value="hm">Hectômetro (hm)</option>
+					<option value="dam">Decâmetro (dam)</option>
+					<option value="m">Metros (m)</option>
+					<option value="dm">Decímetro (dm)</option>
+					<option value="cm">Centímetro (cm)</option>
+					<option value="mm">Milímetro (mm)</option>
+				</select>
+			</section>
+
+			<section>
+				<form action="#">
+					<input
+						class="input-question"
+						type="text"
+						onkeypress="returnvalidarInput(event)"
+						placeholder="Digite Aqui"
+						Aqui
+					/>
+				</form>
+			</section>
+
+			<section>
+				<span class="equal">=</span>
+
+				<div class="result-content">
+					<input
+						class="result"
+						type="text"
+						readonly
+						placeholder="resultado..."
+					/>
+				</div>
+
+				<section class="footer-main2">
+					<button class="calculate-button">Converter</button>
+				</section>
+			</section>
+		</main>
+		<!-- Main -->
+	</body>
 </html>

@@ -1,16 +1,29 @@
+body {
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background: white;
+  }
+
+/* Header */
+
 header{
 	font-size: 1.5rem;
-	background-color:  #9EA18C;
-	color: #E2DEC5;
+	background-color:  #AC9280;
+	color: #FAE8DC;
 	font-weight: bold;
+	
 }
 
 header a:visited{
-	color: #E2DEC5;
+	color: #FAE8DC;
 }
 
 ul{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
@@ -19,3 +32,84 @@ ul{
 	margin: 0 auto;
 	align-items: baseline;
 }
+/* Header */
+
+/* Main */
+main{
+	height: 100vh;
+	background-color: #FAE1CF;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.select-one, .select-two {
+	background-color :#7A6E66;
+    width: auto;
+	text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 300ms ease-in-out;
+	appearance: none; 
+}
+
+.select-one{
+	margin-top: -4rem;
+
+}
+
+.select-one, .select-two:hover{
+	cursor: pointer;
+}
+.select-item{
+	border-radius: 20px;
+	background-color: #9EA18C;
+}
+.text-for{
+	display: block;
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.input-question, .result {
+    background-color: #B59E8D	;
+    width: 16rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: white;
+    font-family: "ocr a";
+    transition: 0.6s;
+}
+.input-question{
+    margin-top: 2.5rem;
+}
+
+.calculate-button{
+	border-radius: 20px;
+	margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #7A6E66;
+    height: 4.5rem;
+    width: 20rem;
+    font-family: "ocr a";
+    transition: 0.6s;
+	margin-bottom: 20px;
+}
+
+
+.equal{
+	font-size: 3rem;
+	font-style: bold;
+	font-weight: bold;
+}
+/* Main */

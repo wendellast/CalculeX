@@ -1,146 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+			rel="stylesheet"
+		/>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+			rel="stylesheet"
+		/>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sarala&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Style -->
-	<link rel="stylesheet" href="static/global/css/global.css">
-	<link rel="stylesheet" href="static/css/index.css">
-	
-	<link rel="shortcut icon" href="static/img/fivicon.png" type="image/x-icon">
-	<title>CalculeX</title>
-</head>
-<body>	
-	<!-- Header -->
-	<header>
-		<section class="content-header content">
-			<nav>
-				<h1><a href="index.html"><i class="fa-solid fa-wave-square fa-beat-fade"></i> CalculeX</a></h1>
-			</nav>
-		</section>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+			integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
+			integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-		<!-- search -->
-		<section class="search-main-content ">
-			<div class="content" >
-				<form action="#" class="search-form">
-					<input type="search" name="search" placeholder="Pesquisar" id="search" class="search-input header-input">
-					<button class="search-button">
-						<i class="fa-solid fa-magnifying-glass fa-fade"></i>
-					</button>
-				</form>
-			</div>
-		</section>
-	</header>
- 	<!-- Alert -->
-	 <div class="no-results-message" style="display: none;">
-		<Span>Nenhum Resultado Encontrado !</Span>
-	</div>
+		<!-- Style -->
+		<link rel="stylesheet" href="static/global/css/global.css" />
+		<link rel="stylesheet" href="static/css/index.css" />
 
-	<!-- Main -->
-	<main class="main-container content">
-		<ul class="container cards">
-			<li>
-				<div class="header-container">
-					<i class="fa-solid fa-scale-balanced"></i>
-					<span>Regra de 3</span>
+		<link
+			rel="shortcut icon"
+			href="static/img/fivicon.png"
+			type="image/x-icon"
+		/>
+		<title>CalculeX</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<section class="content-header content">
+				<nav>
+					<h1>
+						<a href="index.html"
+							><i
+								class="fa-solid fa-wave-square fa-beat-fade"
+							></i>
+							CalculeX</a
+						>
+					</h1>
+				</nav>
+			</section>
+
+			<!-- search -->
+			<section class="search-main-content">
+				<div class="content">
+					<form action="#" class="search-form">
+						<input
+							type="search"
+							name="search"
+							placeholder="Pesquisar"
+							id="search"
+							class="search-input header-input"
+						/>
+						<button class="search-button">
+							<i class="fa-solid fa-magnifying-glass fa-fade"></i>
+						</button>
+					</form>
 				</div>
+			</section>
+		</header>
+		<!-- Alert -->
+		<div class="no-results-message" style="display: none">
+			<span>Nenhum Resultado Encontrado !</span>
+		</div>
 
-				<p>Simplifique seus cálculos e economize tempo em várias áreas. A regra de três é a sua ferramenta para proporções perfeitas!</p>
+		<!-- Main -->
+		<main class="main-container content">
+			<ul class="container cards">
+				<li>
+					<div class="header-container">
+						<i class="fa-solid fa-scale-balanced"></i>
+						<span>Regra de 3</span>
+					</div>
 
-				<a href="https://wendellast.github.io/Config/" target="_blank">Acesse</a>
-			</li>
+					<p>
+						Simplifique seus cálculos e economize tempo em várias
+						áreas. A regra de três é a sua ferramenta para
+						proporções perfeitas!
+					</p>
 
-			<li>
-				<div class="header-container">
-					<i class="fa-solid fa-calculator"></i>
-					<span>Calculadora</span>
-				</div>
+					<a
+						href="https://wendellast.github.io/Config/"
+						target="_blank"
+						>Acesse</a
+					>
+				</li>
 
-				<p>Acelere suas contas e poupe tempo em diversas áreas. A calculadora é a solução para resultados precisos.</p>
+				<li>
+					<div class="header-container">
+						<i class="fa-solid fa-calculator"></i>
+						<span>Calculadora</span>
+					</div>
 
-				<a href="https://wendellast.github.io/Config/" target="_blank">Acesse</a>
-			</li>
+					<p>
+						Acelere suas contas e poupe tempo em diversas áreas. A
+						calculadora é a solução para resultados precisos.
+					</p>
 
-			<li>
-				<div class="header-container">
-					<i class="fa-solid fa-percent"></i>
-					<span>Porcentagem</span>
-				</div>
+					<a
+						href="https://wendellast.github.io/Config/"
+						target="_blank"
+						>Acesse</a
+					>
+				</li>
 
-				<p>Domine as porcentagens de forma rápida e eficiente. Simplifique seus cálculos e obtenha resultados precisos.</p>
+				<li>
+					<div class="header-container">
+						<i class="fa-solid fa-percent"></i>
+						<span>Porcentagem</span>
+					</div>
 
-				<a href="https://wendellast.github.io/Config/" target="_blank">Acesse</a>
-			</li>
+					<p>
+						Domine as porcentagens de forma rápida e eficiente.
+						Simplifique seus cálculos e obtenha resultados precisos.
+					</p>
 
-			<li>
-				<div class="header-container">
-					<i class="fa-solid fa-chart-area"></i>
-					<span>Calcular Área</span>
-				</div>
+					<a
+						href="https://wendellast.github.io/Config/"
+						target="_blank"
+						>Acesse</a
+					>
+				</li>
 
-				<p>Simplifique seus cálculos de área de forma rápida e precisa. Domine as conversões e obtenha resultados eficientes!</p>
+				<li>
+					<div class="header-container">
+						<i class="fa-solid fa-chart-area"></i>
+						<span>Calcular Área</span>
+					</div>
 
-				<a href="https://wendellast.github.io/Config/" target="_blank">Acesse</a>
-			</li>
+					<p>
+						Simplifique seus cálculos de área de forma rápida e
+						precisa. Domine as conversões e obtenha resultados
+						eficientes!
+					</p>
 
-			<li>
-				<div class="header-container">
-					<i class="fa-solid fa-ruler-combined"></i>
-					<span>Conversor De Médidas</span>
-				</div>
+					<a
+						href="https://wendellast.github.io/Config/"
+						target="_blank"
+						>Acesse</a
+					>
+				</li>
 
-				<p>Facilite a conversão de medidas de maneira ágil e precisa. Domine as mudanças de unidades e alcance resultados eficazes com eficiência.</p>
+				<li>
+					<div class="header-container">
+						<i class="fa-solid fa-ruler-combined"></i>
+						<span>Conversor De Médidas</span>
+					</div>
 
-				<a href="https://wendellast.github.io/Config/" target="_blank">Acesse</a>
-			</li>
-		</ul>
-	</main>
+					<p>
+						Facilite a conversão de medidas de maneira ágil e
+						precisa. Domine as mudanças de unidades e alcance
+						resultados eficazes com eficiência.
+					</p>
 
-	<!-- Footer -->
-	<footer class="content-footer">
-		
-		<section class="developer">
-			<a href="https://github.com/wendellast" target="_blank">
-				<i class="fa-solid fa-user"></i>
-				<span>By Wendellast</span></a>
-			
-		</section>
+					<a href="pages/conversorDeMedidas.html" target="_blank"
+						>Acesse</a
+					>
+				</li>
+			</ul>
+		</main>
 
-		<section class="github">
+		<!-- Footer -->
+		<footer class="content-footer">
+			<section class="developer">
+				<a href="https://github.com/wendellast" target="_blank">
+					<i class="fa-solid fa-user"></i>
+					<span>By Wendellast</span></a
+				>
+			</section>
 
-			<a href="https://github.com/wendellast/CalculeX" target="_black">
-				<i class="fa-brands fa-github-alt logo-github"></i>
-				<span>GitHub</span></a>
-		</section>
-		
-	</footer>
+			<section class="github">
+				<a
+					href="https://github.com/wendellast/CalculeX"
+					target="_black"
+				>
+					<i class="fa-brands fa-github-alt logo-github"></i>
+					<span>GitHub</span></a
+				>
+			</section>
+		</footer>
 
-
-
-	<!-- Scripts -->
-	<script src="static/js/index.js"></script>
-</body>
+		<!-- Scripts -->
+		<script src="static/js/index.js"></script>
+	</body>
 </html>
